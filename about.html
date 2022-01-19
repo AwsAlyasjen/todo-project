@@ -10,79 +10,52 @@
     
 </head>
 <body>
-    <header>
-        <div class="inner">
-            <div class="logo">
-                <div>
-                    <img src="./assets/logo.png" alt="logo">
-                    <h5>Welcome to TO-DO manager</h5>
-                </div>
-            </div>
-
-            <nav>
-                <li><span><a href="index.html">Home</a></span></li>
-                <li><span><a href="./about.html">About</a></span></li>
-               
-            </nav>
-        </div>
-          
-
-    </header>
+    <header class="site-header">
+        <div class="site-identity">
+          <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+        </div>  
+        <nav class="site-navigation">
+          <ul class="nav">
+            <li><span><a href="./index.html">Home</a></span></li>
+            <li><span><a href="./about.html">About</a></span></li> 
+          </ul>
+        </nav>
+      </header>
     <main>
-        <form>
-            <table style="background-color: gray;">
-             <tr>
-              <td>Aws Alyasjen</td>
-              <td> <img src="./assets/me.jpg" alt="logo"></td>
-             </tr>
-             <tr>
-              <td>Contact me:</td>
-              <td>awsalyasjen@gmail.com</td>
-             </tr>
-             <tr>
-              <td>I`m a software engineer</td>
-             
-            </table>
-           </form>
-        <form>
-            <table style="background-color: rgb(95, 70, 70);">
-                <tr>
-                    <td>here you can provide your contact information :</td>
-                   </tr> 
-             
-             
-             
-            <tr>
-              <td>Name :</td>
-              <td><input type="text"></td>
-             </tr>
-             <tr>
-                <td>Email :</td>
-                <td><input type="email"></td>
-               </tr>
-             <tr>
-                <td>message :</td>
-                <td><input type="text"></td>
-               </tr>
-
-             <tr>
-              <td><input type="submit" value="Submit"></td>
-             </tr>
-            </table>
-           </form>
-
+       
+        <div class="card">
+            <img src="./assets/myPic.jpg" alt="John" style="width:100%">
+            <h1>Aws Alyasjeen</h1>
+            <p class="title">SE & trainee at LTUC</p>
+            <p class="uni">BAU University</p>
+          </div>
+          <h1 class = "name">Contact Me </h1>
+          <div class="container">
+            <form action="action_page.php">
+          
+              <label for="name">Your Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="number">Phone </label>
+              <input type="text" id="fname" name="Phone" placeholder="+962.....">
+          
+              <label for="email">Email</label>
+              <input type="email" id="email" name="lastname" placeholder="Your Email">
+              <label for="subject">message</label>
+              <input type="text" id="message" name="message" placeholder="write your message">
+          
+              <input type="submit" value="Sent">
+          
+            </form>
+          </div>
     </main>
-    <style>
-
-    </style>
+  
     <footer>
         <div class="footer-content">
             <p> &copy; Copyright 2022 by Javascript Class</p>
-            <li><span><a href="index.html">Terms and privacy</a></span></li>
+            <li><span><a href="./index.html">Terms and privacy</a></span></li>
             <li><span><a href="./about.html">Product overview</a></span></li>
             <li><span><a href="./about.html">Careers</a></span></li>
-        </div>
-       
+        </div>  
     </footer>
 </body>
 

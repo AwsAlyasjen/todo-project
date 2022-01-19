@@ -10,53 +10,84 @@
     
 </head>
 <body>
-    <header>
-        <div class="inner">
-            <div class="logo">
-                <div>
-                    <img src="./assets/logo.png" alt="logo">
-                    <h5>Welcome to TO-DO manager</h5>
-                </div>
-            </div>
-
-            <nav>
-                <li><span><a href="index.html">Home</a></span></li>
-                <li><span><a href="./about.html">About</a></span></li>
-               
-            </nav>
-        </div>
-          
-
-    </header>
+   
+    <header class="site-header">
+        <div class="site-identity">
+          <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+        </div>  
+        <nav class="site-navigation">
+          <ul class="nav">
+            <li><span><a href="./index.html">Home</a></span></li>
+            <li><span><a href="./about.html">About</a></span></li> 
+          </ul>
+        </nav>
+      </header>
     <main>
+        
+        <h1 class = "name">Welcome to TO-DO manager</h1>
         <div class="row">
-            <div class="column" style="background-color:#aaa;">
-              <h2>Tasks</h2>
-              <p>Read a new Book</p>
-              <p>Submit the task</p>
-              <p>Feed my cats</p>
-              <p>go to GYM</p>
+            <div class="column">
+              <table>
+                <tr>
+                  <th class="text">List</th>
+                </tr>
+                <tr>
+                <td  class = "text">
+                    <label for="opt-in">Submit the task</label>
+                    <input type="checkbox" name="my-checkbox" checked>
+                </td>
+                  
+                </tr>
+                <tr>
+                  <td class="text"><label for="check2">Feed my cats</label>
+                    <input type="checkbox" id="check2" name="check2" value="cats"><br>
+                </td>
+                  
+                </tr>
+                <tr>
+                  <td class="text"><label for="check3"> Go to GYM</label>
+                    <input type="checkbox" id="check3" name="check3" value="GYM"><br>
+                </td>
+                  
+                </tr>
+              </table>
             </div>
-            <div class="column" style="background-color:#bbb;">
-              <h2> status</h2>
-              <p>Done</p>
-              <p>Not done yet</p>
-              <p>Done</p>
-              <p>Not done yet</p>
+            <div class="column">
+              <table>
+                <tr>
+                    <th class="text">Status</th>
+                  </tr>
+                  <tr>
+                      <td class="text2"><label for="check1">Done</label>
+                      
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                      <td class="text3"><label for="check2">Not Done yet</label>
+                      
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                      <td class="text3"><label for="check3">Not Done yet</label>
+                      
+                    </td>
+                    
+                  </tr>
+                
+              </table>
             </div>
           </div>
-
     </main>
-    <style>
 
-    </style>
     <footer>
         <div class="footer-content">
             <p> &copy; Copyright 2022 by Javascript Class</p>
-            <li><span><a href="index.html">Terms and privacy</a></span></li>
+            <li><span><a href="./index.html">Terms and privacy</a></span></li>
             <li><span><a href="./about.html">Product overview</a></span></li>
             <li><span><a href="./about.html">Careers</a></span></li>
-        </div>
+        </div>  
        
     </footer>
 </body>
