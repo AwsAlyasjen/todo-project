@@ -24,16 +24,37 @@ else if (skipWelcomingMessage==false && yourgender.toUpperCase()=="FEMALE"|| you
     ;
 }
 //for task 6
-// reversedDays.push(days[i]);
+function askQuestion(question){
+    let answer =prompt(question);
+    if(answer.toUpperCase()==("YES")){
+           
+        return answer;
+    }
+     else if(answer.toUpperCase()==("NO")){
+       
+        return answer;
 
-/*function addElements(array){
-   
-    answers.push(addElements);
-    return answers;
-  
-}*/
+    }
+    else {
+        
+        return "Invalid";
 
-let answers = [];
+          }
+          let questionOne =askQuestion("Do you live in Jordan? (note that all the answers should be (Yes/No):)");
+          let questionTwo =askQuestion("Are you an IT graduate?? (note that all the answers should be (Yes/No):)");
+          let questionThree =askQuestion("Did you receive your username and password?? (note that all the answers should be (Yes/No):)");
+          let answerArray =[questionOne,questionTwo,questionThree];
+          console.log(answerArray);
+          let traverse =(arr)=>{
+              for(let i=0;i<arr.length;i++){
+                  console.log(arr[i]);
+              }
+          }
+          traverse(answerArray);
+
+}
+
+/*let answers = [];
 for(let i=0; i<3;i++){
     if(i==0){
         var checkAddress = prompt("Do you live in Jordan? (note that all the answers should be (Yes/No):)");
@@ -83,6 +104,6 @@ for(let i=0; i<3;i++){
 
        
     }
-    console.log(answers);
+    console.log(answers);*/
    
     
