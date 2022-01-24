@@ -39,10 +39,11 @@ function askQuestion(question){
         
         return "Invalid";
 
-          }
-          let questionOne =askQuestion("Do you live in Jordan? (note that all the answers should be (Yes/No):)");
-          let questionTwo =askQuestion("Are you an IT graduate?? (note that all the answers should be (Yes/No):)");
-          let questionThree =askQuestion("Did you receive your username and password?? (note that all the answers should be (Yes/No):)");
+          }}
+          let questionOne =askQuestion("Do you live in Jordan? (note that all the answers should be (Yes/No):");
+          let questionTwo =askQuestion("Are you an IT graduate?? (note that all the answers should be (Yes/No):");
+          let questionThree =askQuestion("Did you receive your username and password?? (note that all the answers should be (Yes/No):");
+          
           let answerArray =[questionOne,questionTwo,questionThree];
           console.log(answerArray);
           let traverse =(arr)=>{
@@ -52,7 +53,7 @@ function askQuestion(question){
           }
           traverse(answerArray);
 
-}
+
 
 /*let answers = [];
 for(let i=0; i<3;i++){
